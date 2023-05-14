@@ -27,7 +27,7 @@ public class UserService {
     }
 
     public UserEntity getByCredentials(final String email, final String password,
-                                       final PasswordEncoder encoder) {
+                                       PasswordEncoder encoder) {
         //return userRepository.findByEmailAndPassword(email, password);
         final UserEntity originalUser = userRepository.findByEmail(email);
 

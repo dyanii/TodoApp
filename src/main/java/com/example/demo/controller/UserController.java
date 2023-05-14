@@ -40,6 +40,7 @@ public class UserController {
                     .email(registeredUser.getEmail())
                     .id(registeredUser.getId())
                     .username(registeredUser.getUsername())
+                    .password(registeredUser.getPassword())
                     .build();
 
             return ResponseEntity.ok().body(responseUserDTO);
